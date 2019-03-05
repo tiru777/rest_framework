@@ -9,6 +9,7 @@ router.register('groups', views.GroupViewSet)
 
 urlpatterns = [
     path('employee',views.EmployeeList.as_view()),
+    path('forms',views.get_name,name='employee_template'),
     path('', include(router.urls)),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
 ]

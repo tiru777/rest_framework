@@ -1,5 +1,8 @@
 from rest_framework import serializers
 from django.contrib.auth.models import User, Group
+"""
+    default authenticated user and group
+"""
 
 from . models import Employee
 
